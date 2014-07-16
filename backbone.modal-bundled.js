@@ -427,8 +427,8 @@
           background: 'none'
         });
       }
-      Marionette.triggerMethod.call(modal, "show");
-      Marionette.triggerMethod.call(this, "show", modal);
+      Backbone.Marionette.triggerMethod.call(modal, "show");
+      Backbone.Marionette.triggerMethod.call(this, "show", modal);
       this.currentView = modal;
       _ref1 = this.modals;
       for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
@@ -466,7 +466,7 @@
           lastModal.delegateModalEvents();
         }
       }
-      return Marionette.triggerMethod.call(this, "close");
+      return Backbone.Marionette.triggerMethod.call(this, "close");
     };
 
     Modals.prototype.closeAll = function() {
